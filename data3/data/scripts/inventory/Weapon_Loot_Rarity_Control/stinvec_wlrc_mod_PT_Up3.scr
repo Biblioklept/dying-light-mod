@@ -1,0 +1,57 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////// Weapon Loot Rarity Control Mod
+//////////////////////////////////////////////////// Created By: StinVec
+//////////////////////////////////////////////////// https://www.nexusmods.com/dyinglight/users/21896034
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////
+//////////////////  Prison Timer  ////////////////// Level 3: Increased Time 3 (24 Hours)
+////////////////////////////////////////////////////
+
+////__________________________________________________ Default reward_times_default
+sub stinvec_wlrc_mod_PT_norm()
+{
+	RewardTierTime(86400); 	// 0 tier time (s) - the best one 
+	RewardTierTime(86400); 	// 1 tier time (s)
+	RewardTierTime(86400); 	// 2 tier time (s)
+	RewardTierTime(86400); 	// 3 tier time (s)
+	RewardTierTime(86400); 	// 4 tier time (s)
+	RewardTierTime(86400); 	// 5 tier time (s)
+
+	RewardRoomTimes(86400, 86400, 86400, 86400); // how much time do we have to get the reward per coop team size
+	//1,2,3,4
+}
+
+////__________________________________________________ Default reward_times_hard
+sub stinvec_wlrc_mod_PT_h()
+{
+	RewardTierTime(86400); 	// 0 tier time (s) - the best one 
+	RewardTierTime(86400); 	// 1 tier time (s)
+	RewardTierTime(86400); 	// 2 tier time (s)
+	RewardTierTime(86400); 	// 3 tier time (s)
+	RewardTierTime(86400); 	// 4 tier time (s)
+	RewardTierTime(86400); 	// 5 tier time (s)
+
+	RewardRoomTimes(86400, 86400, 86400, 86400); // how much time do we have to get the reward per coop team size
+	//1,2,3,4
+}
+
+////__________________________________________________ Default reward_times_nightmare
+sub stinvec_wlrc_mod_PT_nm()
+{
+	RewardTierTime(86400); 	// 0 tier time (s) - the best one 
+	RewardTierTime(86400); 	// 1 tier time (s)
+	RewardTierTime(86400); 	// 2 tier time (s)
+	RewardTierTime(86400); 	// 3 tier time (s)
+	RewardTierTime(86400); 	// 4 tier time (s)
+	RewardTierTime(86400); 	// 5 tier time (s)
+
+	RewardRoomTimes(86400, 86400, 86400, 86400); // how much time do we have to get the reward per coop team size
+	//1,2,3,4
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////// Weapon Loot Rarity Control Mod
+//////////////////////////////////////////////////// Created By: StinVec
+//////////////////////////////////////////////////// https://www.nexusmods.com/dyinglight/users/21896034
+////////////////////////////////////////////////////////////////////////////////////////////////////////

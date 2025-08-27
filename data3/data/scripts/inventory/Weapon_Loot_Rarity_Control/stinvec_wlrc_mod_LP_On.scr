@@ -1,0 +1,267 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////// Weapon Loot Rarity Control Mod
+//////////////////////////////////////////////////// Created By: StinVec
+//////////////////////////////////////////////////// https://www.nexusmods.com/dyinglight/users/21896034
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+import "containers_object_type.def"
+
+export int Trigger_Open = 0;
+export int Trigger_Search = 1;
+
+export int Color_White =  0;
+export int Color_Green =  1;
+export int Color_Blue =  2;
+export int Color_Violet =  3;
+export int Color_Orange =  4;
+
+////////////////////////////////////////////////////
+///////////////  Lockpicking Enabled  //////////////
+////////////////////////////////////////////////////
+
+////__________________________________________________ 
+sub stinvec_wlrc_lp_1()
+{
+    MeshLootType("steel_locker_single_door_a_loot.msh", "workshop_electric", "Cont_Lockpick", "open_wooden_wardrobe", Trigger_Open, "steel_locker_opening", "hard", false, Color_Violet);
+}
+
+////__________________________________________________ 
+sub stinvec_wlrc_lp_2()
+{
+    MeshLootType("furniture_chest.msh", "ornated_flower",     "WeaponChestMedium",  "open_wooden_chest",    Trigger_Open,   "furniture_chest_a_opening", "Medium", false, Color_Blue)
+    {
+        SetSlotLootType("hook_loot_01", "ValuablesChestMedium", 0.0);
+        SetSlotLootType("hook_loot_02", "ValuablesChestMedium", 1.0);
+        SetSlotLootType("hook_loot_weapon", "WeaponChestMedium_ornated", 1.0);
+    }
+}
+
+////__________________________________________________ 
+sub stinvec_wlrc_lp_3()
+{
+    MeshLootType("furniture_chest.msh", "ornated_oriental",   "WeaponChestHard",    "open_wooden_chest",    Trigger_Open,   "furniture_chest_a_opening", "Hard", false, Color_Violet)
+    {
+        SetSlotLootType("hook_loot_01", "ValuablesChestHard", 0.0);
+        SetSlotLootType("hook_loot_02", "ValuablesChestHard", 1.0);
+        SetSlotLootType("hook_loot_weapon", "WeaponChestHard_ornated", 1.0);
+    }
+}
+
+////__________________________________________________ 
+sub stinvec_wlrc_lp_4()
+{
+    MeshLootType("furniture_chest.msh", "ornated_golden",     "ValuablesChestHard", "open_wooden_chest",    Trigger_Open,   "furniture_chest_a_opening", "imposible", false, Color_Orange)
+    {
+        SetSlotLootType("hook_loot_01", "ValuablesChestHard", 1.0);
+        SetSlotLootType("hook_loot_02", "ValuablesChestHard", 0.85);
+        SetSlotLootType("hook_loot_weapon", "WeaponChestMedium", 0.0);
+    }
+}
+
+////__________________________________________________ 
+sub stinvec_wlrc_lp_5()
+{
+    MeshLootType("anim_ve_van_a_full_door.msh", "Police",     "Cont_VanPolice",     "open_wooden_wardrobe", Trigger_Open,   "van_door_opening", "imposible", false, Color_Orange)
+    {
+        SetSlotLootType("hook_loot01", "Cont_VanPolice_Weapon", 1.0);
+        SetSlotLootType("hook_loot02", "Cont_VanPolice_Other", 0.75);
+    }
+}
+
+////__________________________________________________ 
+sub stinvec_wlrc_lp_6()
+{
+    MeshLootType("anim_ve_van_a_full_door.msh", "Ambulance",  "Cont_VanMedic",      "open_wooden_wardrobe", Trigger_Open,   "van_door_opening", "easy", false, Color_Green)
+	{
+        SetSlotLootType("hook_loot01", "Cont_VanMedic", 1.0);
+        SetSlotLootType("hook_loot02", "Cont_VanMedic", 0.5);
+    }
+}
+
+////__________________________________________________ 
+sub stinvec_wlrc_lp_7()
+{
+    MeshLootType("ve_sedan_a_boot.msh", "Police",             "Cont_SedanPolice",   "open_wooden_wardrobe", Trigger_Open,   "sedan_a_trunk_opening", "medium", false, Color_Blue);  
+}
+
+////__________________________________________________ 
+sub stinvec_wlrc_lp_8()
+{
+    MeshLootType("ve_sedan_b_boot.msh", "Police",             "Cont_SedanPolice",   "open_wooden_wardrobe", Trigger_Open,   "sedan_b_trunk_opening", "medium", false, Color_Blue);
+}
+
+////__________________________________________________ 
+sub stinvec_wlrc_lp_9()
+{
+    MeshLootType("military_box_b.msh",  "Default",            AirDropBox,           "open_cashdesk",        Trigger_Open,   "military_box", "medium", false, Color_Blue)
+    {
+        SetSlotLootType("hook_loot_1", "AirDrop_Box_Left", 1.0);
+        SetSlotLootType("hook_loot_2", "OldTownJewelsBox", 0.5);
+    }
+}
+
+////__________________________________________________ 
+sub stinvec_wlrc_lp_10()
+{
+    MeshLootType("chest_loot_big.msh",  "Wooden",             "Chest_Medium",  "open_cashdesk",        Trigger_Open,   "military_box", "medium", false, Color_Blue)
+    {
+        SetSlotLootType("hook_loot_01", "Chest_Medium", 0.0);
+		SetSlotLootType("hook_loot_02", "Chest_Medium", 1.0);
+        SetSlotLootType("hook_loot_weapon", "WeaponChestMedium", 1.0);
+    }
+}
+
+////__________________________________________________ 
+sub stinvec_wlrc_lp_11()
+{
+    MeshLootType("chest_loot_big.msh",  "Rusted_metal_color_blue_lockpik", "WeaponChestHard", "open_cashdesk", Trigger_Open,"military_box", "hard", false, Color_Violet)
+    {
+        SetSlotLootType("hook_loot_01", "ValuablesChestHard", 0.0);
+        SetSlotLootType("hook_loot_02", "ValuablesChestHard", 1.0);
+        SetSlotLootType("hook_loot_weapon", "WeaponChestHard", 1.0);
+    }
+}
+
+////__________________________________________________ 
+sub stinvec_wlrc_lp_12()
+{
+	MeshLootType("chest_loot_big.msh",  "deadzone_chest_lockpick", "WeaponChestHard_deadzone", "open_cashdesk", Trigger_Open,"military_box", "hard", false, Color_Violet)
+    {
+        SetSlotLootType("hook_loot_01", "ValuablesChestHard", 0.0);
+        SetSlotLootType("hook_loot_02", "ValuablesChestHard", 1.0);
+        SetSlotLootType("hook_loot_weapon", "WeaponChestHard", 1.0);
+    }
+}
+
+////__________________________________________________ 
+sub stinvec_wlrc_lp_13()
+{
+    MeshLootType("dlc_chest_loot_big.msh",  "dlc_wl_medium",             "Chest_Medium",  "open_cashdesk",        Trigger_Open,   "military_box", "medium", false, Color_Blue)
+    {
+        SetSlotLootType("hook_loot_01", "Chest_Medium", 0.0);
+		SetSlotLootType("hook_loot_02", "Chest_Medium", 1.0);
+        SetSlotLootType("hook_loot_weapon", "WeaponChestMedium_Wasteland", 0.8);
+    }
+}
+
+////__________________________________________________ 
+sub stinvec_wlrc_lp_14()
+{
+    MeshLootType("dlc_chest_loot_big.msh",  "dlc_wl_hard", "WeaponChestHard", "open_cashdesk", Trigger_Open,"military_box", "hard", false, Color_Violet)
+    {
+        SetSlotLootType("hook_loot_01", "ValuablesChestHard", 0.0);
+        SetSlotLootType("hook_loot_02", "ValuablesChestHard", 1.0);
+        SetSlotLootType("hook_loot_weapon", "WeaponChestHard_Wasteland", 1.0);
+    }
+}
+
+////__________________________________________________ 
+sub stinvec_wlrc_lp_15()
+{
+	MeshLootType("dlc_chest_loot_big.msh",  "dlc_wl_hunting_tower", "WeaponChestHard", "open_cashdesk", Trigger_Open, "military_box", "hard", false, Color_Violet)
+    {
+        SetSlotLootType("hook_loot_01", "ValuablesChestHard", 0.0);
+        SetSlotLootType("hook_loot_02", "ValuablesChestHard", 1.0);
+        SetSlotLootType("hook_loot_weapon", "WeaponChestHard_Wasteland", 1.0);
+    }
+}
+
+////__________________________________________________ 
+sub stinvec_wlrc_lp_16()
+{
+	MeshLootType("dlc_chest_loot_big.msh",  "Wooden", "Parts_Chest", "open_cashdesk", Trigger_Open,"military_box", "hard", false, Color_Violet)
+    {
+        SetSlotLootType("hook_loot_01", "ValuablesChestHard", 0.0);
+        SetSlotLootType("hook_loot_02", "PartsComponents_Lorry", 1.0);
+        SetSlotLootType("hook_loot_weapon", "Parts_Chest", 1.0);
+    }
+}
+
+////__________________________________________________ 
+sub stinvec_wlrc_lp_17()
+{
+	MeshLootType("dlc_chest_loot_big.msh",  "Silas_rough", "Parts_Chest", "open_cashdesk", Trigger_Open,"military_box", "medium", false, Color_Blue)
+    {
+        SetSlotLootType("hook_loot_weapon", "ValuablesChestHard", 0.0);
+        SetSlotLootType("hook_loot_01", "Parts_Chest", 1.0);
+		SetSlotLootType("hook_loot_02", "PartsComponents_Sedan", 1.0);
+    }
+}
+
+////__________________________________________________ 
+sub stinvec_wlrc_lp_18()
+{
+	MeshLootType("dlc_chest_loot_big.msh",  "Silas_clean", "Parts_Chest", "open_cashdesk", Trigger_Open,"military_box", "hard", false, Color_Violet)
+    {
+        SetSlotLootType("hook_loot_01", "Parts_Chest_Hard", 1.0);
+		SetSlotLootType("hook_loot_02", "PartsComponents_PoliceSedan", 1.0);
+		SetSlotLootType("hook_loot_weapon", "ValuablesChestHard", 0.0);
+    }
+}
+
+////__________________________________________________ 
+sub stinvec_wlrc_lp_19()
+{
+	MeshLootType("anim_ve_van_a_full_door.msh", "Police",     "Cont_VanPolice",     "open_wooden_wardrobe", Trigger_Open,   "van_door_opening", "imposible", false, Color_Orange, "wasteland")
+    {
+        SetSlotLootType("hook_loot01", "Cont_VanPolice_Weapon_Wasteland", 1.0);
+        SetSlotLootType("hook_loot02", "Cont_VanPolice_Other_Wasteland", 0.50);
+    }
+}
+
+////__________________________________________________ 
+sub stinvec_wlrc_lp_20()
+{
+	MeshLootType("military_box_b.msh",  			"dlc_clean",            "Military_Stuff",           "open_cashdesk",        Trigger_Open,   "military_box", 	"medium", false, Color_Green)
+    {
+        SetSlotLootType("hook_loot_1", "Military_Ammo", 1.0);
+		SetSlotLootType("hook_loot_2", "Military_Stuff", 1.0);
+    }
+}
+
+////__________________________________________________ 
+sub stinvec_wlrc_lp_21()
+{
+	MeshLootType("dlc_chest_loot_big.msh",  "dlc_wl_unique_chest", "WeaponChestHard", "open_cashdesk", Trigger_Open, "military_box", "hard", false, Color_Violet)
+    {
+        SetSlotLootType("hook_loot_01", "ValuablesChestHard", 0.0);
+        SetSlotLootType("hook_loot_02", "UpgradeWasteland", 0.0);
+        SetSlotLootType("hook_loot_weapon", "WeaponChestHard_Unique", 1.0);
+    }
+}
+
+////__________________________________________________ 
+sub stinvec_wlrc_lp_22()
+{
+	MeshLootType("dlc_chest_loot_big.msh",  "silas_military_skin", "WeaponChestHard", "open_cashdesk", Trigger_Open, "military_box", "imposible", false, Color_Violet)
+    {
+        SetSlotLootType("hook_loot_01", "Parts_Chest_Military", 1.0);
+        SetSlotLootType("hook_loot_02", "UpgradeWasteland", 1.0);
+        SetSlotLootType("hook_loot_weapon", "WeaponChestHard_Unique", 0.0);
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////__________________________________________________ Prison
+sub stinvec_wlrc_lp_1_p()
+{
+    MeshLootType("chest_loot_big.msh",  "PrisonBox_01","Prison_Chest_WeaponsAndMods", "open_cashdesk", Trigger_Open, "military_box", "hard", false, Color_Orange)	//hard
+    {
+        SetSlotLootType("hook_loot_weapon", "Prison_Chest_Weapon", 1.0);
+        SetSlotLootType("hook_loot_01", "", 0.0); //not used - if weapon hook is used this needs to be disabled, otherwise object in hook_01 will collide with weapon.
+        SetSlotLootType("hook_loot_02", "Prison_Chest_Mod", 1.0);
+    }
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////// Weapon Loot Rarity Control Mod
+//////////////////////////////////////////////////// Created By: StinVec
+//////////////////////////////////////////////////// https://www.nexusmods.com/dyinglight/users/21896034
+////////////////////////////////////////////////////////////////////////////////////////////////////////

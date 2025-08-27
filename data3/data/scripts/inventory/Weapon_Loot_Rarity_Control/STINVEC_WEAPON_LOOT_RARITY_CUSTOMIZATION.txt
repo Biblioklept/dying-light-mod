@@ -1,0 +1,378 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////// Weapon Loot Rarity Control Mod
+/////////////////////////////////////////////////////////////////// Created By: StinVec
+/////////////////////////////////////////////////////////////////// https://www.nexusmods.com/dyinglight/users/21896034
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////
+////// WEAPON LOOT RARITY CONTROL MOD - CUSTOMIZATION
+//////
+//////
+////// TO DISABLE EXPANDED WEAPONS IN LOOT POOLS:
+//////
+////// 1) Add two // marks at the far LEFT of the word 'import' on the line below to disable
+//////    weapons pools being expanded to more weapon types than normal.
+//////
+//////    You can re-enable the expanded weapons in loot by removing the two // marks you
+//////    added to the 'import' line below.
+//////
+///////////////////////////////////////
+//////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////                          ///////
+///////////////////////////////////////////////////////////// EXPANDED WEAPONS IN LOOT ///////
+/////////////////////////////////////////////////////////////                          ///////
+//////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+            ////////////////////////////////////
+	import "stinvec_wlrc_mod_On.scr"//////// ENABLE EXPANDED WEAPONS IN LOOT
+            ////////////////////////////////////
+////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//////
+////// TO DISABLE LOCKPICKING:
+//////
+////// 1) Add two // marks at the far LEFT of the word 'import' on the line below to re-enable
+//////    lockpicking as being required on various loot sources.
+//////
+//////    You can once again have the lockpicking requirement removed by removing the two // marks
+//////    you added to the 'import' line below.
+//////
+///////////////////////////////////////
+//////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////                           ///////
+/////////////////////////////////////////////////////////////    DISABLE LOCKPICKING    ///////
+/////////////////////////////////////////////////////////////                           ///////
+//////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+            ////////////////////////////////////
+	import "stinvec_wlrc_mod_LP_Off.scr"//// DISABLE LOCKPICKING REQUIREMENT
+            ////////////////////////////////////
+////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//////
+////// TO CHANGE THE ACTIVE PRISON TIMER LEVEL:
+//////
+////// 1) Remove the two // marks from the far LEFT of the word 'import' on the line of the
+//////    level that you wish to make the active level.
+//////
+////// 2) Then disable the previous active level by adding the two // marks at the far LEFT of
+//////    the word 'import' on its line.
+//////
+//////
+////// NOTES__________________________________________________________________________________
+//////     - This setting will have no effect unless you have also installed the mod's optional
+//////       "DataDLC39_1.pk3" Prison Addon file into the "...\Dying Light\DW_DLC39" folder.
+//////
+//////     - If you mistakenly enable more than one level, the level that is listed upper-most
+//////       in the file will be the active level.
+//////
+//////     - If you mistakenly disable all levels, the mod's default 'L2: INCREASED TIME 2 (+100%)' 
+//////       will be the active level.
+//////
+///////////////////////////////////////
+//////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////                           ///////
+/////////////////////////////////////////////////////////////    PRISON TIMER CONTROL   ///////
+/////////////////////////////////////////////////////////////                           ///////
+//////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+            ////////////////////////////////////
+//	import "stinvec_wlrc_mod_PT_Def.scr"//// L0: DEFAULT TIME
+//	import "stinvec_wlrc_mod_PT_Up1.scr"//// L1: INCREASED TIME 1 (+50%)
+	import "stinvec_wlrc_mod_PT_Up2.scr"//// L2: INCREASED TIME 2 (+100%) (Mod Default)
+//	import "stinvec_wlrc_mod_PT_Up3.scr"//// L3: INCREASED TIME 3 (24 Hours)
+            ////////////////////////////////////
+////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//////
+////// TO CHANGE THE ACTIVE LOOT RARITY LEVEL:
+//////
+////// 1) Remove the two // marks from the far LEFT of the word 'import' on the line of the
+//////    level that you wish to make the active level.
+//////
+////// 2) Then disable the previous active level by adding the two // marks at the far LEFT of
+//////    the word 'import' on its line.
+//////
+//////
+////// NOTES__________________________________________________________________________________
+//////     - If you mistakenly enable more than one level, the level that is listed upper-most
+//////       in the file will be the active level.
+//////
+//////     - If you mistakenly disable all levels, the mod's default 'L4: HIGHER CHANCES 3' 
+//////       will be the active level.
+//////
+//////     - For a visualization of the probabilities for each rarity in the customization
+//////       levels, you can review the tables I include below the level selection block. This
+//////       may help to better inform you in selecting the level you wish to make active.
+//////
+///////////////////////////////////////
+//////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////                           ///////
+//////////////////////////////////////////////////////////// RARITY OF WEAPONS IN LOOT ///////
+////////////////////////////////////////////////////////////                           ///////
+//////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+            ////////////////////////////////////
+//	import "stinvec_wlrc_mod_Def.scr"/////// L0: UNALTERED CHANCES
+//	import "stinvec_wlrc_mod_Even.scr"////// L1: EQUAL CHANCE FOR ALL
+//	import "stinvec_wlrc_mod_Up1.scr"/////// L2: HIGHER RARITY CHANCE INCREASE 1
+//	import "stinvec_wlrc_mod_Up2.scr"/////// L3: HIGHER RARITY CHANCE INCREASE 2
+	import "stinvec_wlrc_mod_Up3.scr"/////// L4: HIGHER RARITY CHANCE INCREASE 3 (Mod Default)
+//	import "stinvec_wlrc_mod_Up4.scr"/////// L5: VIOLET, ORANGE AND GOLD ONLY
+//	import "stinvec_wlrc_mod_Up5.scr"/////// L6: ORANGE AND GOLD ONLY
+//	import "stinvec_wlrc_mod_Up6.scr"/////// L7: GOLD ONLY
+            ////////////////////////////////////
+////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////  __________________________________________________________________ 
+//////////////// |     EXAMPLE: DEFAULT MEDIUM LOCKPICK DIFFICULTY WEAPON CHEST     | ________________________________
+//////////////// | NORMAL CHANCES                    HARD/NIGHTMARE CHANCES         ||      EQUAL CHANCE FOR ALL      |
+//////////////// |__________________________________________________________________||________________________________|
+//////////////// |  White |                    5%     White -                    0% ||  White ||||||||||||||||||||    |
+//////////////// |  Green ||||||||||||||      70%     Green |||||||             35% ||  Green ||||||||||||||||||||    |
+//////////////// |   Blue |||||               23%      Blue ||||||||||||        60% ||   Blue ||||||||||||||||||||    |
+//////////////// | Violet |                    2%    Violet |                    5% || Violet ||||||||||||||||||||    |
+//////////////// | Orange -                    0%    Orange -                    0% || Orange ||||||||||||||||||||    |
+//////////////// |   Gold -                    0%      Gold -                    0% ||   Gold ||||||||||||||||||||    |
+//////////////// |________________________________L0________________________________||_______________L1_______________|
+////////////////  ________________________________  ________________________________  ________________________________ 
+//////////////// |HIGHER RARITY CHANCE INCREASE 1 ||HIGHER RARITY CHANCE INCREASE 2 ||HIGHER RARITY CHANCE INCREASE 3 |
+//////////////// |________________________________||________________________________||________________________________|
+//////////////// |  White |                    2% ||  White |                    2% ||  White -                    0% |
+//////////////// |  Green |||\                18% ||  Green ||\                 13% ||  Green ||\                 12% |
+//////////////// |   Blue ||||||              30% ||   Blue ||||\               25% ||   Blue |||\                18% |
+//////////////// | Violet ||||||              30% || Violet ||||||              30% || Violet ||||\               22% |
+//////////////// | Orange |||/                20% || Orange |||/                20% || Orange |||||               23% |
+//////////////// |   Gold -                    0% ||   Gold |/                  10% ||   Gold |||||               25% |
+//////////////// |_______________L2_______________||_______________L3_______________||_______________L4_______________|
+////////////////  ________________________________  ________________________________  ________________________________
+//////////////// |  VIOLET, ORANGE AND GOLD ONLY  ||      ORANGE AND GOLD ONLY      ||            GOLD ONLY           |
+//////////////// |________________________________||________________________________||________________________________|
+//////////////// |  White -                    0% ||  White -                    0% ||  White -                    0% |
+//////////////// |  Green -                    0% ||  Green -                    0% ||  Green -                    0% |
+//////////////// |   Blue -                    0% ||   Blue -                    0% ||   Blue -                    0% |
+//////////////// | Violet |||||||             33% || Violet -                    0% || Violet -                    0% |
+//////////////// | Orange |||||||             33% || Orange ||||||||||          50% || Orange -                    0% |
+//////////////// |   Gold |||||||             33% ||   Gold ||||||||||          50% ||   Gold |||||||||||||||||| 100% |
+//////////////// |_______________L5_______________||_______________L6_______________||_______________L7_______________|
+////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////// <<< ////// <<< ////// <<<   END WEAPON LOOT RARITY CONTROL MOD CONFIGURATION   >>> ////// >>> ////// >>> //////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+import "stinvec_wlrc_mod_Up3.scr"//////////////////////////////////////////////////////////////////////////////////////
+import "stinvec_wlrc_mod_Off.scr"//////////////////////////////////////////////////////////////////////////////////////
+import "stinvec_wlrc_mod_LP_On.scr"////////////////////////////////////////////////////////////////////////////////////
+import "stinvec_wlrc_mod_PT_Up2.scr"///////////////////////////////////////////////////////////////////////////////////
+sub ColorSet_WeaponChest_Medium_stinvec_wlrc_mod_i(){ use ColorSet_WeaponChest_Medium_stinvec_wlrc_mod();
+} sub ColorSet_WeaponChest_Medium_stinvec_wlrc_mod_hn_i(){ use ColorSet_WeaponChest_Medium_stinvec_wlrc_mod_hn();
+} sub ColorSet_WeaponChest_Hard_stinvec_wlrc_mod_i(){ use ColorSet_WeaponChest_Hard_stinvec_wlrc_mod();
+} sub ColorSet_WeaponChest_Hard_stinvec_wlrc_mod_h_i(){ use ColorSet_WeaponChest_Hard_stinvec_wlrc_mod_h();
+} sub ColorSet_WeaponChest_Hard_stinvec_wlrc_mod_hn_i(){ use ColorSet_WeaponChest_Hard_stinvec_wlrc_mod_hn();
+} sub ColorSet_WeaponChest_Hard_Deadzone_stinvec_wlrc_mod_h_i(){ use ColorSet_WeaponChest_Hard_Deadzone_stinvec_wlrc_mod_h();
+
+} sub ColorSet_Tier0_stinvec_wlrc_mod_i(){ use ColorSet_Tier0_stinvec_wlrc_mod();
+} sub ColorSet_Tier1_stinvec_wlrc_mod_i(){ use ColorSet_Tier1_stinvec_wlrc_mod();
+} sub ColorSet_Tier2_stinvec_wlrc_mod_i(){ use ColorSet_Tier2_stinvec_wlrc_mod();
+} sub ColorSet_Default_stinvec_wlrc_mod_ph_i(){ use ColorSet_Default_stinvec_wlrc_mod_ph();
+} sub ColorSet_Default_stinvec_wlrc_mod_pnm_i(){ use ColorSet_Default_stinvec_wlrc_mod_pnm();
+
+} sub stinvec_wlrc_lp_1_i(){ use stinvec_wlrc_lp_1(); } sub stinvec_wlrc_lp_2_i(){ use stinvec_wlrc_lp_2();
+} sub stinvec_wlrc_lp_3_i(){ use stinvec_wlrc_lp_3(); } sub stinvec_wlrc_lp_4_i(){ use stinvec_wlrc_lp_4();
+} sub stinvec_wlrc_lp_5_i(){ use stinvec_wlrc_lp_5(); } sub stinvec_wlrc_lp_6_i(){ use stinvec_wlrc_lp_6();
+} sub stinvec_wlrc_lp_7_i(){ use stinvec_wlrc_lp_7(); } sub stinvec_wlrc_lp_8_i(){ use stinvec_wlrc_lp_8();
+} sub stinvec_wlrc_lp_9_i(){ use stinvec_wlrc_lp_9(); } sub stinvec_wlrc_lp_10_i(){ use stinvec_wlrc_lp_10();
+} sub stinvec_wlrc_lp_11_i(){ use stinvec_wlrc_lp_11(); } sub stinvec_wlrc_lp_12_i(){ use stinvec_wlrc_lp_12();
+} sub stinvec_wlrc_lp_13_i(){ use stinvec_wlrc_lp_13(); } sub stinvec_wlrc_lp_14_i(){ use stinvec_wlrc_lp_14();
+} sub stinvec_wlrc_lp_15_i(){ use stinvec_wlrc_lp_15(); } sub stinvec_wlrc_lp_16_i(){ use stinvec_wlrc_lp_16();
+} sub stinvec_wlrc_lp_17_i(){ use stinvec_wlrc_lp_17(); } sub stinvec_wlrc_lp_18_i(){ use stinvec_wlrc_lp_18();
+} sub stinvec_wlrc_lp_19_i(){ use stinvec_wlrc_lp_19(); } sub stinvec_wlrc_lp_20_i(){ use stinvec_wlrc_lp_20();
+} sub stinvec_wlrc_lp_21_i(){ use stinvec_wlrc_lp_21(); } sub stinvec_wlrc_lp_22_i(){ use stinvec_wlrc_lp_22();
+} sub stinvec_wlrc_lp_1_p_i(){ use stinvec_wlrc_lp_1_p();
+
+} sub stinvec_wlrc_pool_all_i(){ use stinvec_wlrc_pool_all(); } sub stinvec_wlrc_pool_norm_1_i(){ use stinvec_wlrc_pool_norm_1();
+} sub stinvec_wlrc_pool_norm_2_i(){ use stinvec_wlrc_pool_norm_2(); } sub stinvec_wlrc_pool_norm_3_i(){ use stinvec_wlrc_pool_norm_3();
+} sub stinvec_wlrc_pool_norm_4_i(){ use stinvec_wlrc_pool_norm_4(); } sub stinvec_wlrc_pool_norm_5_i(){ use stinvec_wlrc_pool_norm_5();
+} sub stinvec_wlrc_pool_norm_6_i(){ use stinvec_wlrc_pool_norm_6(); } sub stinvec_wlrc_pool_norm_7_i(){ use stinvec_wlrc_pool_norm_7();
+} sub stinvec_wlrc_pool_norm_8_i(){ use stinvec_wlrc_pool_norm_8(); } sub stinvec_wlrc_pool_norm_9_i(){ use stinvec_wlrc_pool_norm_9();
+} sub stinvec_wlrc_pool_norm_10_i(){ use stinvec_wlrc_pool_norm_10(); } sub stinvec_wlrc_pool_norm_11_i(){ use stinvec_wlrc_pool_norm_11();
+} sub stinvec_wlrc_pool_norm_12_i(){ use stinvec_wlrc_pool_norm_12(); } sub stinvec_wlrc_pool_norm_13_i(){ use stinvec_wlrc_pool_norm_13();
+} sub stinvec_wlrc_pool_norm_14_i(){ use stinvec_wlrc_pool_norm_14(); } sub stinvec_wlrc_pool_norm_15_i(){ use stinvec_wlrc_pool_norm_15();
+} sub stinvec_wlrc_pool_norm_16_i(){ use stinvec_wlrc_pool_norm_16(); } sub stinvec_wlrc_pool_norm_17_i(){ use stinvec_wlrc_pool_norm_17();
+} sub stinvec_wlrc_pool_norm_18_i(){ use stinvec_wlrc_pool_norm_18(); } sub stinvec_wlrc_pool_norm_19_i(){ use stinvec_wlrc_pool_norm_19();
+} sub stinvec_wlrc_pool_norm_20_i(){ use stinvec_wlrc_pool_norm_20(); } sub stinvec_wlrc_pool_norm_21_i(){ use stinvec_wlrc_pool_norm_21();
+} sub stinvec_wlrc_pool_norm_22_i(){ use stinvec_wlrc_pool_norm_22(); } sub stinvec_wlrc_pool_norm_23_i(){ use stinvec_wlrc_pool_norm_23();
+} sub stinvec_wlrc_pool_norm_24_i(){ use stinvec_wlrc_pool_norm_24(); } sub stinvec_wlrc_pool_norm_25_i(){ use stinvec_wlrc_pool_norm_25();
+} sub stinvec_wlrc_pool_norm_26_i(){ use stinvec_wlrc_pool_norm_26(); } sub stinvec_wlrc_pool_norm_27_i(){ use stinvec_wlrc_pool_norm_27();
+} sub stinvec_wlrc_pool_norm_28_i(){ use stinvec_wlrc_pool_norm_28(); } sub stinvec_wlrc_pool_norm_29_i(){ use stinvec_wlrc_pool_norm_29();
+} sub stinvec_wlrc_pool_norm_30_i(){ use stinvec_wlrc_pool_norm_30(); } sub stinvec_wlrc_pool_norm_31_i(){ use stinvec_wlrc_pool_norm_31();
+} sub stinvec_wlrc_pool_norm_32_i(){ use stinvec_wlrc_pool_norm_32(); } sub stinvec_wlrc_pool_norm_33_i(){ use stinvec_wlrc_pool_norm_33();
+} sub stinvec_wlrc_pool_norm_34_i(){ use stinvec_wlrc_pool_norm_34(); } sub stinvec_wlrc_pool_norm_35_i(){ use stinvec_wlrc_pool_norm_35();
+} sub stinvec_wlrc_pool_norm_36_i(){ use stinvec_wlrc_pool_norm_36(); } sub stinvec_wlrc_pool_norm_37_i(){ use stinvec_wlrc_pool_norm_37();
+} sub stinvec_wlrc_pool_norm_38_i(){ use stinvec_wlrc_pool_norm_38(); } sub stinvec_wlrc_pool_norm_39_i(){ use stinvec_wlrc_pool_norm_39();
+} sub stinvec_wlrc_pool_norm_40_i(){ use stinvec_wlrc_pool_norm_40(); } sub stinvec_wlrc_pool_norm_41_i(){ use stinvec_wlrc_pool_norm_41();
+} sub stinvec_wlrc_pool_norm_42_i(){ use stinvec_wlrc_pool_norm_42(); } sub stinvec_wlrc_pool_norm_43_i(){ use stinvec_wlrc_pool_norm_43();
+} sub stinvec_wlrc_pool_norm_44_i(){ use stinvec_wlrc_pool_norm_44(); } sub stinvec_wlrc_pool_norm_45_i(){ use stinvec_wlrc_pool_norm_45();
+} sub stinvec_wlrc_pool_norm_46_i(){ use stinvec_wlrc_pool_norm_46(); } sub stinvec_wlrc_pool_norm_47_i(){ use stinvec_wlrc_pool_norm_47();
+} sub stinvec_wlrc_pool_norm_48_i(){ use stinvec_wlrc_pool_norm_48(); } sub stinvec_wlrc_pool_norm_49_i(){ use stinvec_wlrc_pool_norm_49();
+} sub stinvec_wlrc_pool_norm_50_i(){ use stinvec_wlrc_pool_norm_50(); } sub stinvec_wlrc_pool_norm_51_i(){ use stinvec_wlrc_pool_norm_51();
+} sub stinvec_wlrc_pool_norm_52_i(){ use stinvec_wlrc_pool_norm_52(); } sub stinvec_wlrc_pool_norm_53_i(){ use stinvec_wlrc_pool_norm_53();
+} sub stinvec_wlrc_pool_norm_54_i(){ use stinvec_wlrc_pool_norm_54(); } sub stinvec_wlrc_pool_norm_55_i(){ use stinvec_wlrc_pool_norm_55();
+} sub stinvec_wlrc_pool_norm_56_i(){ use stinvec_wlrc_pool_norm_56(); } sub stinvec_wlrc_pool_norm_57_i(){ use stinvec_wlrc_pool_norm_57();
+
+} sub stinvec_wlrc_pool_hard_1_i(){ use stinvec_wlrc_pool_hard_1(); } sub stinvec_wlrc_pool_hard_2_i(){ use stinvec_wlrc_pool_hard_2();
+} sub stinvec_wlrc_pool_hard_3_i(){ use stinvec_wlrc_pool_hard_3(); } sub stinvec_wlrc_pool_hard_4_i(){ use stinvec_wlrc_pool_hard_4();
+} sub stinvec_wlrc_pool_hard_5_i(){ use stinvec_wlrc_pool_hard_5(); } sub stinvec_wlrc_pool_hard_6_i(){ use stinvec_wlrc_pool_hard_6();
+} sub stinvec_wlrc_pool_hard_7_i(){ use stinvec_wlrc_pool_hard_7(); } sub stinvec_wlrc_pool_hard_8_i(){ use stinvec_wlrc_pool_hard_8();
+} sub stinvec_wlrc_pool_hard_9_i(){ use stinvec_wlrc_pool_hard_9(); } sub stinvec_wlrc_pool_hard_10_i(){ use stinvec_wlrc_pool_hard_10();
+} sub stinvec_wlrc_pool_hard_11_i(){ use stinvec_wlrc_pool_hard_11(); } sub stinvec_wlrc_pool_hard_12_i(){ use stinvec_wlrc_pool_hard_12();
+} sub stinvec_wlrc_pool_hard_13_i(){ use stinvec_wlrc_pool_hard_13(); } sub stinvec_wlrc_pool_hard_14_i(){ use stinvec_wlrc_pool_hard_14();
+} sub stinvec_wlrc_pool_hard_15_i(){ use stinvec_wlrc_pool_hard_15(); } sub stinvec_wlrc_pool_hard_16_i(){ use stinvec_wlrc_pool_hard_16();
+} sub stinvec_wlrc_pool_hard_17_i(){ use stinvec_wlrc_pool_hard_17(); } sub stinvec_wlrc_pool_hard_18_i(){ use stinvec_wlrc_pool_hard_18();
+} sub stinvec_wlrc_pool_hard_19_i(){ use stinvec_wlrc_pool_hard_19(); } sub stinvec_wlrc_pool_hard_20_i(){ use stinvec_wlrc_pool_hard_20();
+} sub stinvec_wlrc_pool_hard_21_i(){ use stinvec_wlrc_pool_hard_21(); } sub stinvec_wlrc_pool_hard_22_i(){ use stinvec_wlrc_pool_hard_22();
+} sub stinvec_wlrc_pool_hard_23_i(){ use stinvec_wlrc_pool_hard_23(); } sub stinvec_wlrc_pool_hard_24_i(){ use stinvec_wlrc_pool_hard_24();
+} sub stinvec_wlrc_pool_hard_25_i(){ use stinvec_wlrc_pool_hard_25(); } sub stinvec_wlrc_pool_hard_26_i(){ use stinvec_wlrc_pool_hard_26();
+} sub stinvec_wlrc_pool_hard_27_i(){ use stinvec_wlrc_pool_hard_27(); } sub stinvec_wlrc_pool_hard_28_i(){ use stinvec_wlrc_pool_hard_28();
+} sub stinvec_wlrc_pool_hard_29_i(){ use stinvec_wlrc_pool_hard_29(); } sub stinvec_wlrc_pool_hard_30_i(){ use stinvec_wlrc_pool_hard_30();
+} sub stinvec_wlrc_pool_hard_31_i(){ use stinvec_wlrc_pool_hard_31(); } sub stinvec_wlrc_pool_hard_32_i(){ use stinvec_wlrc_pool_hard_32();
+} sub stinvec_wlrc_pool_hard_33_i(){ use stinvec_wlrc_pool_hard_33(); } sub stinvec_wlrc_pool_hard_34_i(){ use stinvec_wlrc_pool_hard_34();
+} sub stinvec_wlrc_pool_hard_35_i(){ use stinvec_wlrc_pool_hard_35(); } sub stinvec_wlrc_pool_hard_36_i(){ use stinvec_wlrc_pool_hard_36();
+} sub stinvec_wlrc_pool_hard_37_i(){ use stinvec_wlrc_pool_hard_37(); } sub stinvec_wlrc_pool_hard_38_i(){ use stinvec_wlrc_pool_hard_38();
+} sub stinvec_wlrc_pool_hard_39_i(){ use stinvec_wlrc_pool_hard_39(); } sub stinvec_wlrc_pool_hard_40_i(){ use stinvec_wlrc_pool_hard_40();
+} sub stinvec_wlrc_pool_hard_41_i(){ use stinvec_wlrc_pool_hard_41(); } sub stinvec_wlrc_pool_hard_42_i(){ use stinvec_wlrc_pool_hard_42();
+} sub stinvec_wlrc_pool_hard_43_i(){ use stinvec_wlrc_pool_hard_43(); } sub stinvec_wlrc_pool_hard_44_i(){ use stinvec_wlrc_pool_hard_44();
+} sub stinvec_wlrc_pool_hard_45_i(){ use stinvec_wlrc_pool_hard_45(); } sub stinvec_wlrc_pool_hard_46_i(){ use stinvec_wlrc_pool_hard_46();
+} sub stinvec_wlrc_pool_hard_47_i(){ use stinvec_wlrc_pool_hard_47(); } sub stinvec_wlrc_pool_hard_48_i(){ use stinvec_wlrc_pool_hard_48();
+} sub stinvec_wlrc_pool_hard_49_i(){ use stinvec_wlrc_pool_hard_49(); } sub stinvec_wlrc_pool_hard_50_i(){ use stinvec_wlrc_pool_hard_50();
+} sub stinvec_wlrc_pool_hard_51_i(){ use stinvec_wlrc_pool_hard_51(); } sub stinvec_wlrc_pool_hard_52_i(){ use stinvec_wlrc_pool_hard_52();
+} sub stinvec_wlrc_pool_hard_53_i(){ use stinvec_wlrc_pool_hard_53(); } sub stinvec_wlrc_pool_hard_54_i(){ use stinvec_wlrc_pool_hard_54();
+
+} sub stinvec_wlrc_pool_nm_1_i(){ use stinvec_wlrc_pool_nm_1(); } sub stinvec_wlrc_pool_nm_2_i(){ use stinvec_wlrc_pool_nm_2();
+} sub stinvec_wlrc_pool_nm_3_i(){ use stinvec_wlrc_pool_nm_3(); } sub stinvec_wlrc_pool_nm_4_i(){ use stinvec_wlrc_pool_nm_4();
+} sub stinvec_wlrc_pool_nm_5_i(){ use stinvec_wlrc_pool_nm_5(); } sub stinvec_wlrc_pool_nm_6_i(){ use stinvec_wlrc_pool_nm_6();
+} sub stinvec_wlrc_pool_nm_7_i(){ use stinvec_wlrc_pool_nm_7(); } sub stinvec_wlrc_pool_nm_8_i(){ use stinvec_wlrc_pool_nm_8();
+} sub stinvec_wlrc_pool_nm_9_i(){ use stinvec_wlrc_pool_nm_9(); } sub stinvec_wlrc_pool_nm_10_i(){ use stinvec_wlrc_pool_nm_10();
+} sub stinvec_wlrc_pool_nm_11_i(){ use stinvec_wlrc_pool_nm_11(); } sub stinvec_wlrc_pool_nm_12_i(){ use stinvec_wlrc_pool_nm_12();
+} sub stinvec_wlrc_pool_nm_13_i(){ use stinvec_wlrc_pool_nm_13(); } sub stinvec_wlrc_pool_nm_14_i(){ use stinvec_wlrc_pool_nm_14();
+} sub stinvec_wlrc_pool_nm_15_i(){ use stinvec_wlrc_pool_nm_15(); } sub stinvec_wlrc_pool_nm_16_i(){ use stinvec_wlrc_pool_nm_16();
+} sub stinvec_wlrc_pool_nm_17_i(){ use stinvec_wlrc_pool_nm_17(); } sub stinvec_wlrc_pool_nm_18_i(){ use stinvec_wlrc_pool_nm_18();
+} sub stinvec_wlrc_pool_nm_19_i(){ use stinvec_wlrc_pool_nm_19(); } sub stinvec_wlrc_pool_nm_20_i(){ use stinvec_wlrc_pool_nm_20();
+} sub stinvec_wlrc_pool_nm_21_i(){ use stinvec_wlrc_pool_nm_21(); } sub stinvec_wlrc_pool_nm_22_i(){ use stinvec_wlrc_pool_nm_22();
+} sub stinvec_wlrc_pool_nm_23_i(){ use stinvec_wlrc_pool_nm_23(); } sub stinvec_wlrc_pool_nm_24_i(){ use stinvec_wlrc_pool_nm_24();
+} sub stinvec_wlrc_pool_nm_25_i(){ use stinvec_wlrc_pool_nm_25(); } sub stinvec_wlrc_pool_nm_26_i(){ use stinvec_wlrc_pool_nm_26();
+} sub stinvec_wlrc_pool_nm_27_i(){ use stinvec_wlrc_pool_nm_27(); } sub stinvec_wlrc_pool_nm_28_i(){ use stinvec_wlrc_pool_nm_28();
+} sub stinvec_wlrc_pool_nm_29_i(){ use stinvec_wlrc_pool_nm_29(); } sub stinvec_wlrc_pool_nm_30_i(){ use stinvec_wlrc_pool_nm_30();
+} sub stinvec_wlrc_pool_nm_31_i(){ use stinvec_wlrc_pool_nm_31(); } sub stinvec_wlrc_pool_nm_32_i(){ use stinvec_wlrc_pool_nm_32();
+} sub stinvec_wlrc_pool_nm_33_i(){ use stinvec_wlrc_pool_nm_33(); } sub stinvec_wlrc_pool_nm_34_i(){ use stinvec_wlrc_pool_nm_34();
+} sub stinvec_wlrc_pool_nm_35_i(){ use stinvec_wlrc_pool_nm_35(); } sub stinvec_wlrc_pool_nm_36_i(){ use stinvec_wlrc_pool_nm_36();
+} sub stinvec_wlrc_pool_nm_37_i(){ use stinvec_wlrc_pool_nm_37(); } sub stinvec_wlrc_pool_nm_38_i(){ use stinvec_wlrc_pool_nm_38();
+} sub stinvec_wlrc_pool_nm_39_i(){ use stinvec_wlrc_pool_nm_39(); } sub stinvec_wlrc_pool_nm_40_i(){ use stinvec_wlrc_pool_nm_40();
+} sub stinvec_wlrc_pool_nm_41_i(){ use stinvec_wlrc_pool_nm_41(); } sub stinvec_wlrc_pool_nm_42_i(){ use stinvec_wlrc_pool_nm_42();
+} sub stinvec_wlrc_pool_nm_43_i(){ use stinvec_wlrc_pool_nm_43(); } sub stinvec_wlrc_pool_nm_44_i(){ use stinvec_wlrc_pool_nm_44();
+} sub stinvec_wlrc_pool_nm_45_i(){ use stinvec_wlrc_pool_nm_45(); } sub stinvec_wlrc_pool_nm_46_i(){ use stinvec_wlrc_pool_nm_46();
+} sub stinvec_wlrc_pool_nm_47_i(){ use stinvec_wlrc_pool_nm_47(); } sub stinvec_wlrc_pool_nm_48_i(){ use stinvec_wlrc_pool_nm_48();
+} sub stinvec_wlrc_pool_nm_49_i(){ use stinvec_wlrc_pool_nm_49(); } sub stinvec_wlrc_pool_nm_50_i(){ use stinvec_wlrc_pool_nm_50();
+} sub stinvec_wlrc_pool_nm_51_i(){ use stinvec_wlrc_pool_nm_51(); } sub stinvec_wlrc_pool_nm_52_i(){ use stinvec_wlrc_pool_nm_52();
+} sub stinvec_wlrc_pool_nm_53_i(){ use stinvec_wlrc_pool_nm_53(); } sub stinvec_wlrc_pool_nm_54_i(){ use stinvec_wlrc_pool_nm_54();
+
+} sub stinvec_wlrc_pool_p_1_i(){ use stinvec_wlrc_pool_p_1(); } sub stinvec_wlrc_pool_p_2_i(){ use stinvec_wlrc_pool_p_2();
+} sub stinvec_wlrc_pool_p_3_i(){ use stinvec_wlrc_pool_p_3(); } sub stinvec_wlrc_pool_p_4_i(){ use stinvec_wlrc_pool_p_4();
+} sub stinvec_wlrc_pool_p_5_i(){ use stinvec_wlrc_pool_p_5(); } sub stinvec_wlrc_pool_p_6_i(){ use stinvec_wlrc_pool_p_6();
+} sub stinvec_wlrc_pool_p_7_i(){ use stinvec_wlrc_pool_p_7(); } sub stinvec_wlrc_pool_p_8_i(){ use stinvec_wlrc_pool_p_8();
+} sub stinvec_wlrc_pool_p_9_i(){ use stinvec_wlrc_pool_p_9(); } sub stinvec_wlrc_pool_p_10_i(){ use stinvec_wlrc_pool_p_10();
+} sub stinvec_wlrc_pool_p_11_i(){ use stinvec_wlrc_pool_p_11(); } sub stinvec_wlrc_pool_p_12_i(){ use stinvec_wlrc_pool_p_12();
+
+} sub stinvec_wlrc_mod_PT_norm_i(){ use stinvec_wlrc_mod_PT_norm(); } sub stinvec_wlrc_mod_PT_h_i(){ use stinvec_wlrc_mod_PT_h();
+} sub stinvec_wlrc_mod_PT_nm_i(){ use stinvec_wlrc_mod_PT_nm();
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////// Weapon Loot Rarity Control Mod
+/////////////////////////////////////////////////////////////////// Created By: StinVec
+}////////////////////////////////////////////////////////////////// https://www.nexusmods.com/dyinglight/users/21896034
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
