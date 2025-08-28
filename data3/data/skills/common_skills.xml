@@ -401,7 +401,7 @@
 	<skill id="RepairLuck" cat="status" tier="10" max_level="1" desc_params="lucky_repair;P" skill_points="1" skill_points_type="Status">
 		<level_req type="Status" value="7"/>
 		<skill_req id="craftingexpertise"/>
-		<effect id="PerfectRepairChance" change="0.25"/>
+		<effect id="PerfectRepairChance" change="1.0"/>
 	</skill>
 	
 	<skill id="NimbleHands" cat="status" tier="16" max_level="1" desc_params="nimble_hands;P" skill_points="1" skill_points_type="Status">
