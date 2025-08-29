@@ -12,8 +12,8 @@ Mod merge is provided as is. If errors occur please report to this GitHub page i
 ### Mods Included
 - [Hunter Buggy Smash Fix](https://www.nexusmods.com/dyinglight/mods/1382)
 - [Various Gameplay Tweaks](https://www.nexusmods.com/dyinglight/mods/1240)
-- [Re-Enabling Of Air Drops UPDATED](https://www.mediafire.com/file/mxoja050kaewsox/Re-Enabling_Of_Air_Drops_UPDATED.rar/file) - [Original Mod Page](https://www.nexusmods.com/dyinglight/mods/503?tab=posts)
-- [G.R.E. Walk and Talk UPDATED](https://mega.nz/file/NxBXzJDC#uR032SyFwIGg8xinMktiMW3A0xIZNB3D7HUP-5UjuRE) - [Original Mod Page](https://www.nexusmods.com/dyinglight/mods/556?tab=posts)
+- [Re-Enabling Of Air Drops UPDATED](https://www.mediafire.com/file/mxoja050kaewsox/Re-Enabling_Of_Air_Drops_UPDATED.rar/file) - [Mirror](https://github.com/Biblioklept/dying-light-air-drops-mod) - [Original Mod Page](https://www.nexusmods.com/dyinglight/mods/503?tab=posts)
+- [G.R.E. Walk and Talk UPDATED](https://mega.nz/file/NxBXzJDC#uR032SyFwIGg8xinMktiMW3A0xIZNB3D7HUP-5UjuRE) - [Mirror](https://github.com/Biblioklept/dying-light-walk-and-talk-mod) - [Original Mod Page](https://www.nexusmods.com/dyinglight/mods/556?tab=posts)
 - [Buy Ammo On Hard Mode](https://www.nexusmods.com/dyinglight/mods/1374)
 - [AI Spawning Tweaks](https://www.nexusmods.com/dyinglight/mods/1116)
 - [Weapon Loot Rarity Control](https://www.nexusmods.com/dyinglight/mods/430)
