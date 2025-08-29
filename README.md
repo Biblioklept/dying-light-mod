@@ -11,6 +11,7 @@ Mod merge is provided as is. If errors occur please report to this GitHub page i
 
 ### Mods Included
 - [Hunter Buggy Smash Fix](https://www.nexusmods.com/dyinglight/mods/1382)
+- [More FOV 2023](https://www.nexusmods.com/dyinglight/mods/968)
 - [Various Gameplay Tweaks](https://www.nexusmods.com/dyinglight/mods/1240)
 - [G.R.E. Walk and Talk UPDATED](https://mega.nz/file/NxBXzJDC#uR032SyFwIGg8xinMktiMW3A0xIZNB3D7HUP-5UjuRE) - [Mirror](https://github.com/Biblioklept/dying-light-walk-and-talk-mod) - [Original Mod Page](https://www.nexusmods.com/dyinglight/mods/556?tab=posts)
 - [Buy Ammo On Hard Mode](https://www.nexusmods.com/dyinglight/mods/1374)

@@ -184,7 +184,7 @@ sub main()
         ShootHorzRecoil(0.0);
         ShootHorzRecoilSpread(0.0);
         ShootRecoilTime(0.09);
-        ShootMode(ShotMode_Automatic);
+        ShootMode(ShotMode_Single);
         BulletsPerShot(1);
         AimFov(1.6);
         MaxReboundCount(3);

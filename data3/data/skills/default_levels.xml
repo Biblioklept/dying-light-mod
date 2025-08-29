@@ -33,7 +33,7 @@
 	<prop n="NightExpRequiredTime" v="4"/>
 	<prop n="NightExpSurvivalConstantAward" v="0"/>
     
-    <prop n="DeathPenaltyOnFallMul" v="0.0"/>
+    <prop n="DeathPenaltyOnFallMul" v="0.2"/>
     <prop n="DeathPenaltyInChallengeMul" v="0"/>
 			
 	<prop n="NightExpActionsReward" v="1.0"/>
@@ -209,7 +209,6 @@
     <prop n="KnockDownMinHorzAngle" v="-30"/>
     <prop n="KnockDownMaxHorzAngle" v="30"/>
 	<prop n="BozakKnockdownTimeToDeath" v="45"/>
-	<prop n="KnockdownAfterKnockdownMinTime" v="0.6"/>
     
     <prop n="NearbyEnemiesSearchRange" v="7.0"/>
 	<prop n="SwimLookTimetMul" v="0.4"/>    
@@ -266,7 +265,7 @@
     <prop n="HealthCriticalLevel" v="25"/>                      
     <prop n="HealthRegenerationMaxLevel" v="25"/>               <!-- Regenerates health up to this value. Post process depends on LowHealthEffectThreshold  -->
     <prop n="LowHealthEffectThreshold" v="1.0"/>                <!-- Defines the value of health when critical health post process is working, based on HealthCriticalLevel -->
-    <prop n="HealthRegenerationDelay" v="5.0"/>                 <!-- Time after which player starts to regenerate, measured from last hit -->
+    <prop n="HealthRegenerationDelay" v="4.0"/>                 <!-- Time after which player starts to regenerate, measured from last hit -->
     <prop n="HealthRegenerationTimeToMax" v="8.0"/>             <!-- Time needed to regenerate health up to HealthRegenerationMaxLevel -->
     <prop n="HealthPerSecond" v="0"/>                           <!-- Amount of health being regenerated each second, to be used as auto heal skill -->
     
@@ -351,8 +350,7 @@
         
     <!-- CHARGE ATTACK COMMON -->
     <prop n="ChargeSpreadProbability" v="0.0"/>     
-    <prop n="ChargeOverchargeDamage" v="0.0"/>
-	<prop n="ChargeAdditionalRange" v="0.15"/>
+    <prop n="ChargeOverchargeDamage" v="0.0"/>  
     
     <prop n="ChargeStaminaDecreaseFactor" v="0"/>
     <prop n="ChargeAutoReleaseTime" v="-1.0"/>  
@@ -414,9 +412,9 @@
     
     <prop n="WeightCanCarry" v="100.0"/>
 
-    <prop n="MaxAmmoPistol" v="999"/>
-    <prop n="MaxAmmoRifle" v="999"/>
-    <prop n="MaxAmmoShotgun" v="999"/>
+    <prop n="MaxAmmoPistol" v="50"/>
+    <prop n="MaxAmmoRifle" v="120"/>
+    <prop n="MaxAmmoShotgun" v="20"/>
         
     <prop n="FirearmsPistolReloadTimeMul" v="1.0"/> 
     <prop n="FirearmsRevolverReloadTimeMul" v="1.0"/>   
@@ -465,7 +463,7 @@
     <prop n="ComboResetTime" v="5.0"/>
     <prop n="StompLevel" v="-1.0"/>                            <!-- enables stomper -->
     <prop n="DamageReductionAfterMovementDuration" v="5"/>
-    <prop n="MinimalPlayerBlastDamageOnExplosion" v="0.0"/>    <!-- it's minimal damage, that player receive when is knockdown after explosion -->
+    <prop n="MinimalPlayerBlastDamageOnExplosion" v="5.0"/>    <!-- it's minimal damage, that player receive when is knockdown after explosion -->
     <prop n="ThrownWeaponStickChance" v="1.0"/>
     <prop n="ThrownWeaponKOChance" v="0.0"/>
     <prop n="ThrowAdditionalPhysicsDamage" v="0.0"/>
@@ -498,8 +496,6 @@
 
     <!-- GROUND POUND -->
     <prop n="GroundPoundCooldown" v="-1.0"/>
-    <prop n="GroundPoundMinHeight" v="1.1"/>
-	
 
     <!-- JUMP ATTACK -->
     <prop n="JumpAttackStaminaUsage" v="0.5"/>
@@ -1528,7 +1524,7 @@
 <level id="22" type="Status"><prop n="SurvivorXPHealOther" v="500"/></level>
 <level id="23" type="Status"><prop n="SurvivorXPHealOther" v="500"/></level>
 <level id="24" type="Status"><prop n="SurvivorXPHealOther" v="500"/></level>
-<!--
+
 <level id="1" type="Status"><prop n="SurvivalPenaltyOnDeath"  v="-60.0"/></level>
 <level id="2" type="Status"><prop n="SurvivalPenaltyOnDeath"  v="-120.0"/></level>
 <level id="3" type="Status"><prop n="SurvivalPenaltyOnDeath"  v="-240.0"/></level>
@@ -1553,7 +1549,7 @@
 <level id="22" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-4000.0"/></level>
 <level id="23" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-4200.0"/></level>
 <level id="24" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-4400.0"/></level>
-
+<!--
 <level id="1" type="Status"><prop n="SurvivalPenaltyOnDeathNight"  v="-60.0"/></level>
 <level id="2" type="Status"><prop n="SurvivalPenaltyOnDeathNight"  v="-120.0"/></level>
 <level id="3" type="Status"><prop n="SurvivalPenaltyOnDeathNight"  v="-240.0"/></level>
