@@ -4,11 +4,6 @@ A Dying Light mod merge that tweaks gameplay to the way that I prefer it.
 ## Important Notice
 Mod merge is provided as is. If errors occur please report to this GitHub page instead of the mod authors.
 
-### Setup
-- Download the repository.
-- Pack the data folder into either data3.zip or datadlc39_1.zip depending on the folder name.
-- Rename the .zip file to .pak.
-
 ### Mods Included
 - [Hunter Buggy Smash Fix](https://www.nexusmods.com/dyinglight/mods/1382)
 - [More FOV 2023](https://www.nexusmods.com/dyinglight/mods/968)
