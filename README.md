@@ -5,6 +5,8 @@ A Dying Light mod merge that tweaks gameplay to the way that I prefer it.
 Mod merge is provided as is. If errors occur please report to this GitHub page instead of the mod authors.
 
 ### Mods Included
+- [No Telemetry](https://www.nexusmods.com/dyinglight/mods/1393)
+- [Improved Visuals](https://www.nexusmods.com/dyinglight/mods/1400)
 - [Hunter Buggy Smash Fix](https://www.nexusmods.com/dyinglight/mods/1382)
 - [More FOV 2023](https://www.nexusmods.com/dyinglight/mods/968)
 - [Various Gameplay Tweaks](https://www.nexusmods.com/dyinglight/mods/1240)
