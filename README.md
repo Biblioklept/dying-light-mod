@@ -19,7 +19,12 @@ Mod merge is provided as is. If errors occur please report to this GitHub page i
 - [Timepiece 2024](https://www.nexusmods.com/dyinglight/mods/1100)
 
 ### Other Recommended Mods
+- [Increase Save Slots](https://www.nexusmods.com/dyinglight/mods/1218)
+> Increases save slots to 10, so you can have more than 4 saves.
 - [Multiplayer Missions](https://www.nexusmods.com/dyinglight/mods/1116)
 > Allows you to play the main campaign's prologue, finale, and The Following DLC's finale in multiplayer (cooperative) mode.
 - [Dying Light Mod Loader](https://github.com/12brendon34/DLML)
 > Lets you load this .pak file (and any others!) without having to directly replace the game files.
+
+#### [Dying Light 2 Version](https://github.com/Biblioklept/dying-light-2-mod/releases/latest)
+#### [Dying Light: The Beast Version](https://github.com/Biblioklept/dying-light-the-beast-mod/releases/latest)
