@@ -7,6 +7,7 @@ Mod merge is provided as is. If errors occur please report to this GitHub page i
 ### Mods Included
 - [No Telemetry](https://www.nexusmods.com/dyinglight/mods/1393)
 - [Improved Visuals](https://www.nexusmods.com/dyinglight/mods/1400)
+- [Improved Gore](https://www.nexusmods.com/dyinglight/mods/1404)
 - [Hunter Buggy Smash Fix](https://www.nexusmods.com/dyinglight/mods/1382)
 - [More FOV 2023](https://www.nexusmods.com/dyinglight/mods/968)
 - [Various Gameplay Tweaks](https://www.nexusmods.com/dyinglight/mods/1240)
